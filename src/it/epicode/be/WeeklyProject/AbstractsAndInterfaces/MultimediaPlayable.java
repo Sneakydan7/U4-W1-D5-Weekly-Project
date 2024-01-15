@@ -48,4 +48,12 @@ public abstract class MultimediaPlayable extends Multimedia implements Riproduci
     public void setDurata(int durata) {
         this.durata = durata;
     }
+
+    @Override
+    public String toString() {
+        return "MultimediaPlayable{" +
+                "volume=" + volume +
+                ", durata=" + durata +
+                '}';
+    }
 }

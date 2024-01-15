@@ -67,4 +67,11 @@ public class Video extends MultimediaPlayable implements Luminosita {
     public void setLuminosita(int luminosita) {
         this.luminosita = luminosita;
     }
+
+    @Override
+    public String toString() {
+        return "Video{" +
+                "luminosita=" + luminosita +
+                "} " + super.toString();
+    }
 }

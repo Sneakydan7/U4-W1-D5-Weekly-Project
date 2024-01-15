@@ -20,7 +20,7 @@ public class Immagine extends Multimedia implements Luminosita {
         for (int i = 0; i < getLuminosita(); i++) {
             System.out.print("*");
         }
-    
+
 
         System.out.println(" ");
         System.out.println("---------------------");
@@ -54,5 +54,13 @@ public class Immagine extends Multimedia implements Luminosita {
 
     public void setLuminosita(int luminosita) {
         this.luminosita = luminosita;
+    }
+
+    @Override
+    public String toString() {
+        return "Immagine{" +
+                "luminosita=" + luminosita + "," +
+                "titolo=" + super.getTitolo() +
+                '}';
     }
 }

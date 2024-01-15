@@ -22,4 +22,11 @@ public abstract class Multimedia {
     public void setTitolo(String titolo) {
         this.titolo = titolo;
     }
+
+    @Override
+    public String toString() {
+        return "Multimedia{" +
+                "titolo='" + titolo + '\'' +
+                '}';
+    }
 }
